@@ -1,7 +1,7 @@
 <template>
   
     <!--Productos-->
-    <section class="productos">
+    <section class="body__productos">
       <div class="productos__center">
         <div class="producto" v-for="producto in productos" :key="producto.id">
           <div class="image__container">
@@ -13,7 +13,7 @@
           </div>
           <div class="bottom">
             <div class="btn__group">
-              <router-link :to="`/detailProduct/${producto.id}`" class="btn view">Vista</router-link>
+              <router-link :to="`/detailProduct/${producto.id}`" class="btn view">Ver detalles</router-link>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ const productos = inject('productos')
 
 /* PRODUCTOS */
 
-.productos{
+.body__productos{
     padding: 5rem 0;
     width: 80%;
     margin: 0 auto;

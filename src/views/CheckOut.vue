@@ -47,9 +47,12 @@
 
                     <input type="radio" name="pay" class="radio" id="bc2" checked>
                     <label for="bc2" @click="changeMethodPay">
+                        <div>
                         <a href="https://paypal.me/gr985809?country.x=VE&locale.x=es_XC" target="_blank">
                             <i class="fa fa-cc-paypal"></i> Paypal
                         </a> 
+                        </div>
+
                     </label>
                 </div>
             </div>
@@ -85,7 +88,7 @@
             <!--Payment Details End-->
             <div class="input_group">
                 <div class="input_box">
-                    <button type="submit">PAY NOW <b>${{totalCostCart}}</b></button>
+                    <button type="submit">Pagar ahora <b>${{totalCostCart}}</b></button>
                 </div>
             </div>
 

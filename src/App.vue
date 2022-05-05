@@ -1,11 +1,10 @@
 <template>
+    <Loader/>
     <main>
         <Header/>
         <CartApp/>
         <router-view/>
     </main>
-    <Loader/>
-
 </template>
 
 <script setup>
@@ -22,9 +21,6 @@ import Loader from './components/Loader.vue';
     const productos = computed(()=> store.state.shop.productosFiltrados)
 
     provide('productos', productos);
-
-
-
 </script>
 
 <style lang="scss">
@@ -100,23 +96,6 @@ li{
         padding: 0 2rem;
     }
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-
-
-
 
 
 
